@@ -1,0 +1,23 @@
+{
+  "name": "mikser-core-subscribe",
+  "version": "2.0.2",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almero-digital-marketing/mikser-core-subscribe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almero-digital-marketing/mikser-core-subscribe/issues"
+  },
+  "homepage": "https://github.com/almero-digital-marketing/mikser-core-subscribe#readme",
+  "dependencies": {
+    "socket.io-client": "^4.5.4"
+  },
+  "peerDependencies": {
+    "mikser-core": "^1.4.0"
+  }
+}
