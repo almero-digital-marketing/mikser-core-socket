@@ -1,4 +1,4 @@
-import { onLoad, useLogger, mikser, createdHook, updatedHook, deletedHook, triggerHook, onFinalized } from 'mikser-core'
+import { onLoad, useLogger, mikser, createdHook, updatedHook, deletedHook, triggerHook } from 'mikser-core'
 import { Manager } from 'socket.io-client'
 
 const sockets = []
