@@ -7,7 +7,7 @@ export default ({
     createdHook, 
     updatedHook, 
     deletedHook, 
-    triggerHook 
+    triggeredHook 
 }) => {
     const sockets = []
     
@@ -24,7 +24,7 @@ export default ({
                     token: subscription.token
                 }            
             })
-            socket.on('trigger', async message => await triggerHook(message.uri, message))
+            socket.on('trigger', async message => await triggeredHook(message.uri, message))
             socket.on('created', async ({ name, entity }) => await deletedHook(name, entity))
             socket.on('updated', async ({ name, entity }) => await updatedHook(name, entity))
             socket.on('deleted', async ({ name, entity }) => await createdHook(name, entity))
